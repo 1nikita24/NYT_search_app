@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NY Times Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <h1><i class="fa fa-newspaper-o " style="font-size:60px;color:white;"></i> New York Times Search</h1>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fa fa-tasks " style="font-size:18px;color:navy;"></i> Search Parameters
+                    </div>
+                    <div class="card-body">
+                        <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Search Term:</label>
+                                <input type="email" class="form-control" id="query" placeholder="Something Interesting">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Number of Records to Retrieve</label>
+                                <select class="form-control" id="number">
+                            <option>1</option>
+                            <option>5</option>
+                            <option>10</option>
+                          </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Start Year (Optional):</label>
+                                <input type="email" class="form-control" id="begin" placeholder="1851">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">End Year (Optional):</label>
+                                <input type="email" class="form-control" id="end" placeholder="2018">
+                            </div>
+                            <button type="button" class="btn btn-primary" id="search"><i class="fa fa-search " style="font-size:18px;color:white;"></i> Search</button>
+                            <button type="button" class="btn btn-secondary" id="clear"><i class="fa fa-trash " style="font-size:18px;color:white;"></i> Clear Results</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fa fa-columns " style="font-size:18px;color:navy;"></i> Top Articles
+                    </div>
+                    <div class="card-body" id="articles">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-12">
+                <footer>
+                    <br><br>
+                    <h6>Made with lots of Bootstrap</h6>
+
+                    <div class="card-body">
+
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/javascript/app.js" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/ap.js"></script>
+</body>
+
+</html>
